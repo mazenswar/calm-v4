@@ -4,6 +4,19 @@ import FeatureGrid from "@/app/components/sections/featureGrid/FeatureGrid";
 import PageHero from "@/app/components/sections/pageHero/PageHero";
 import TwoColumn from "@/app/components/sections/twoColumn/TwoColumn";
 import React from "react";
+import { generateMeta } from "../../../../config/metadata";
+
+// META -----------------------------------------------------------------------
+
+export const metadata = generateMeta({
+	title: "Therapy for Gifted Adults",
+	description:
+		"Support for the intensity, depth, and complexity that often come with being a highly capable, perceptive adult. Therapy designed for gifted adults, not against them.",
+	path: "/specialties/gifted-adults",
+});
+
+// CONFIG ----------------------------------------------------------------------
+
 const pageHeroConfig = {
 	eyebrow: "Specialties",
 	heading: "Therapy for Gifted Adults",

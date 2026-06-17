@@ -1,0 +1,91 @@
+@use "../styles/mixins" as *;
+
+/* ---------------- LIST ---------------- */
+.posts {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  padding: 0;
+
+  @include respond(md) {
+    gap: 1.25rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.post {
+  list-style: none;
+}
+
+.postCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--brand-6);
+  border: 1px solid var(--brand-1);
+  box-shadow: var(--shadow-1);
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+
+  &__title a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+
+  @include respond(md) {
+    border-radius: 16px;
+  }
+}
+
+.postCard__media {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  background: var(--brand-6);
+  flex-shrink: 0;
+
+  img {
+    display: block;
+  }
+}
+
+.postCard__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.25rem;
+  gap: 0;
+}
+
+.postCard__title {
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+
+  a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+}
+
+.postCard__excerpt {
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+  margin-bottom: 1.25rem;
+}
+
+.postCard__cta {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--brand-1);
+  margin-top: auto;
+}

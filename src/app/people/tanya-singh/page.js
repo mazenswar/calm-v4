@@ -2,7 +2,17 @@ import CredentialTimeline from "@/app/components/sections/credentialTimeline/Cre
 import CTABanner from "@/app/components/sections/ctaBanner/CTABanner";
 import PageHero from "@/app/components/sections/pageHero/PageHero";
 import PublicationsList from "@/app/components/sections/publicationsList/PublicationsList";
+import { generateMeta } from "../../../../config/metadata";
 
+// META ----------------------------------------------------------------------------
+
+export const metadata = generateMeta({
+	title: "Tanya Singh, PhD | Credentials & Clinical Training",
+	description:
+		"Clinical training, education, publications, and professional memberships of Tanya Singh, PhD, licensed clinical psychologist and founder of CALM Therapy.",
+	path: "/people/tanya-singh",
+});
+// CONFIG ---------------------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: "Director and Founder, CALM Therapy",
 	heading: "Dr. Tanya Singh, PhD",

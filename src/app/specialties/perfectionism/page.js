@@ -4,7 +4,17 @@ import AudienceSection from "../../components/sections/audienceSection/AudienceS
 import FeatureGrid from "../../components/sections/featureGrid/FeatureGrid";
 import Steps from "../../components/sections/steps/Steps";
 import CTABanner from "../../components/sections/ctaBanner/CTABanner";
+import { generateMeta } from "../../../../config/metadata";
+// META ------------------------------------------------------------------
 
+export const metadata = generateMeta({
+	title: "Perfectionism Therapy",
+	description:
+		"Therapy for perfectionism that addresses the underlying fear and self-criticism driving it, not just the behavior. Virtual sessions for high-functioning adults.",
+	path: "/specialties/perfectionism",
+});
+
+// CONFIG ----------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: "Specialties",
 	heading: "Therapy for Perfectionism",

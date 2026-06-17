@@ -5,23 +5,23 @@ const site = {
 	// EDIT THIS PER PROJECT
 	// =========================
 	name: "CALM",
-	tagline: "A meaningful online presence for your practice",
+	tagline: "Modern Psychology, Timeless Wisdom",
 	description:
-		"Binswar builds custom websites for therapists and mental health practitioners. We handle everything from design and copywriting to SEO and analytics so you can focus on your clients.",
-	url: "https://binswar.com",
+		"CALM Therapy offers virtual, integrative therapy for anxiety, OCD, complex trauma, and related conditions. We work with intelligent, high-functioning adults seeking depth beyond symptom management, serving 43 states and jurisdictions from our East Coast practice.",
+	url: "https://calmtherapy.center",
 	locale: "en_US",
 	// Theme
 	theme: "calm", // "warm" | "clean" | "bold" | "earth" | "minimal"
 	// Analytics
 	analytics: {
-		ga4: "G-XXXXXXXXXX", // or null to disable
+		ga4: null, // or null to disable
 		gtm: null, // "GTM-XXXXXXX" or null
 	},
 	// Contact
-	email: "mazen@binswar.com",
+	email: "info@calmtherapy.center",
 	phone: null, // e.g. "+17321234567"
 	address: {
-		street: "801 Route 1 PMB 1035",
+		street: "801 Route 1 PMB 1026",
 		city: "Edison",
 		state: "NJ",
 		zip: "08817",
@@ -30,10 +30,10 @@ const site = {
 
 	// Branding
 	logo: {
-		src: "/logo.png", // place in /public
+		src: "/logo/logo-hr.webp", // place in /public
 		width: 200,
 		height: 60,
-		alt: "Binswar logo",
+		alt: "CALM Therapy Logo",
 	},
 
 	// OG image defaults
@@ -41,22 +41,22 @@ const site = {
 		width: 1200,
 		height: 630,
 		// Brand colors used in dynamic OG image
-		background: "#1a1a2e", // dark brand color
+		background: "#fff7f3",
 		accent: "#7f5a83", // brand-1
-		text: "#ffffff",
+		text: "#4d4d4d",
 	},
 
 	// Social
 	social: {
 		twitter: null, // "@handle"
-		instagram: null, // "handle"
-		linkedin: null, // "handle"
+		instagram: "calmtherapy.center", // "handle"
+		linkedin: "calm-therapy-center", // "handle"
 	},
 
 	// Business type for JSON-LD
 	// See: https://schema.org/LocalBusiness subtypes
 	// Common: "LocalBusiness" | "MedicalBusiness" | "ProfessionalService"
-	businessType: "ProfessionalService",
+	businessType: "MedicalBusiness",
 
 	// Operating hours for JSON-LD (optional)
 	// hours: [

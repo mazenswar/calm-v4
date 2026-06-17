@@ -1,3 +1,4 @@
+// specialties/gad.js
 import AudienceSection from "@/app/components/sections/audienceSection/AudienceSection";
 import CTABanner from "@/app/components/sections/ctaBanner/CTABanner";
 import FeatureGrid from "@/app/components/sections/featureGrid/FeatureGrid";
@@ -5,7 +6,17 @@ import PageHero from "@/app/components/sections/pageHero/PageHero";
 import Steps from "@/app/components/sections/steps/Steps";
 import TwoColumn from "@/app/components/sections/twoColumn/TwoColumn";
 import React from "react";
+import { generateMeta } from "../../../../config/metadata";
+// META -----------------------------------------------------------------------------
 
+export const metadata = generateMeta({
+	title: "Generalized Anxiety Disorder (GAD) Therapy",
+	description:
+		"Therapy for Generalized Anxiety Disorder that addresses constant worry and hypervigilance, helping you rebuild trust in your ability to handle uncertainty.",
+	path: "/specialties/gad",
+});
+
+// CONFIG ----------------------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: "Specialties",
 	heading: "Therapy for Generalized Anxiety Disorder (GAD)",

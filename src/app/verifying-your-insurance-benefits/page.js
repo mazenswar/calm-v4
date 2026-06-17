@@ -1,7 +1,16 @@
+import { generateMeta } from "../../../config/metadata";
 import PageHero from "../components/sections/pageHero/PageHero";
 import Steps from "../components/sections/steps/Steps";
 import OONSection from "./components/oonSection/OONSection";
+// META -----------------------------------------------------------------------------
 
+export const metadata = generateMeta({
+	title: "Verifying Your Out-of-Network Insurance Benefits",
+	description:
+		"A step-by-step guide to calling your insurance company, understanding your allowed amount, and getting reimbursed for out-of-network therapy sessions.",
+	path: "/verifying-your-insurance-benefits",
+});
+// CONFIG ----------------------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: null,
 	heading: "Verifying Your Insurance Benefits",

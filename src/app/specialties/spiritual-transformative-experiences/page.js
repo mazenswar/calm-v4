@@ -3,7 +3,17 @@ import CTABanner from "@/app/components/sections/ctaBanner/CTABanner";
 import PageHero from "@/app/components/sections/pageHero/PageHero";
 import TwoColumn from "@/app/components/sections/twoColumn/TwoColumn";
 import React from "react";
+import { generateMeta } from "../../../../config/metadata";
+// META ---------------------------------------------------------------------------
 
+export const metadata = generateMeta({
+	title: "Therapy for Spiritual & Transformative Experiences",
+	description:
+		"Support for integrating profound, disorienting, or spiritually significant experiences without pathologizing what is meaningful to you.",
+	path: "/specialties/spiritual-transformative-experiences",
+});
+
+// CONFIG -------------------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: "Specialties",
 	heading: "Spiritual & Transformative Experiences",

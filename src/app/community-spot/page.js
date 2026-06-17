@@ -1,3 +1,4 @@
+import { generateMeta } from "../../../config/metadata";
 import FeatureGrid from "../components/sections/featureGrid/FeatureGrid";
 import PageHero from "../components/sections/pageHero/PageHero";
 import Steps from "../components/sections/steps/Steps";
@@ -5,9 +6,19 @@ import TwoColumn from "../components/sections/twoColumn/TwoColumn";
 import CommunitySpotCTA from "./components/communitySpotCTA/CommunitySpotCTA";
 import CommunitySpotStatus from "./components/communitySpotStatus/CommunitySpotStatus";
 
+// META -----------------------------------------------------------------------
+
+export const metadata = generateMeta({
+	title: "Community Spot | Reduced-Fee Therapy",
+	description:
+		"CALM Therapy's Community Spot offers reduced-fee therapy for those who could not otherwise access our care. Learn how the program works and how to apply.",
+	path: "/community-spot",
+});
+
+// VARS ------------------------------------------------------------------------
 const IS_SPOT_OPEN = false;
 const FORM_URL = "https://forms.gle/E6svnu3LKUuJ9LgA6";
-
+// CONFIG -----------------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: null,
 	heading: "Community Spot",

@@ -3,7 +3,17 @@ import CTABanner from "@/app/components/sections/ctaBanner/CTABanner";
 import PageHero from "@/app/components/sections/pageHero/PageHero";
 import TwoColumn from "@/app/components/sections/twoColumn/TwoColumn";
 import React from "react";
+import { generateMeta } from "../../../../config/metadata";
 
+// META ---------------------------------------------------------------------------
+
+export const metadata = generateMeta({
+	title: "Treatment-Resistant Conditions",
+	description:
+		"When previous treatment has not helped enough, we look deeper and try a different path forward. Therapy for treatment-resistant anxiety, OCD, and depression.",
+	path: "/specialties/treatment-resistant",
+});
+// CONFIG --------------------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: "Specialties",
 	heading: "Therapy for Treatment-Resistant Conditions",

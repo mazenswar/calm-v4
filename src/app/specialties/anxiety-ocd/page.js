@@ -1,7 +1,16 @@
 import PageHero from "@/app/components/sections/pageHero/PageHero";
 import TwoColumn from "@/app/components/sections/twoColumn/TwoColumn";
 import CardGrid from "@/app/components/sections/cardGrid/CardGrid";
+import { generateMeta } from "../../../../config/metadata";
+// META ---------------------------------------------------------------
 
+export const metadata = generateMeta({
+	title: "Anxiety & OCD Therapy",
+	description:
+		"Evidence-based therapy for anxiety, OCD, and related conditions using ERP, i-CBT, and ACT. Virtual sessions for adults across 43 states and jurisdictions.",
+	path: "/specialties/anxiety-ocd",
+});
+// CONFIG -------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: "Specialties",
 	heading: "Therapy for Anxiety, OCD and Related Conditions",

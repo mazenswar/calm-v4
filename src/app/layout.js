@@ -18,7 +18,6 @@ import site from "../../config/site";
 import Nav from "./components/nav/Nav";
 import Footer from "./components/footer/Footer";
 import "./styles/index.scss";
-import DesignPanel from "./components/ui/designPanel/DesignPanel";
 
 // Root metadata — applies to all pages unless overridden
 export const metadata = generateMeta({
@@ -62,16 +61,16 @@ export default function RootLayout({ children }) {
 				<a href="#main-content" className="skip-nav">
 					Skip to main content
 				</a>
-				{/* <DesignPanel /> */}
+
 				<Nav />
 
 				{children}
 
 				<Footer />
+				{/* Analytics — only renders if IDs are set */}
+				{site.analytics?.ga4 && <GoogleAnalytics gaId={site.analytics.ga4} />}
+				{site.analytics?.gtm && <GoogleTagManager gtmId={site.analytics.gtm} />}
 			</body>
-			{/* Analytics — only renders if IDs are set */}
-			{site.analytics?.ga4 && <GoogleAnalytics gaId={site.analytics.ga4} />}
-			{site.analytics?.gtm && <GoogleTagManager gtmId={site.analytics.gtm} />}
 		</html>
 	);
 }

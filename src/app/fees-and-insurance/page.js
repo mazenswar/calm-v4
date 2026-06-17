@@ -3,7 +3,17 @@ import FeatureGrid from "../components/sections/featureGrid/FeatureGrid";
 import TwoColumn from "../components/sections/twoColumn/TwoColumn";
 import CTABanner from "../components/sections/ctaBanner/CTABanner";
 import RateCards from "../components/sections/rateCards/RateCards";
+import { generateMeta } from "../../../config/metadata";
 
+// META ---------------------------------------------------------------------------------
+
+export const metadata = generateMeta({
+	title: "Fees & Insurance | Private-Pay Therapy",
+	description:
+		"Learn about session fees, our private-pay model, and how out-of-network insurance reimbursement works at CALM Therapy. Transparent pricing with no hidden costs.",
+	path: "/fees-and-insurance",
+});
+// CONFIG -------------------------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: null,
 	heading: "Therapy is an Investment",

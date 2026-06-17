@@ -1,6 +1,16 @@
+import { generateMeta } from "../../../config/metadata";
 import CardGrid from "../components/sections/cardGrid/CardGrid";
 import PageHero from "../components/sections/pageHero/PageHero";
 
+// META --------------------------------------------------------------------
+
+export const metadata = generateMeta({
+	title: "Specialties",
+	description:
+		"Explore CALM Therapy's areas of focus, including anxiety, OCD, complex trauma, treatment-resistant conditions, gifted adults, and ketamine-assisted psychotherapy.",
+	path: "/specialties",
+});
+// CONFIG -------------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: null,
 	heading: "Specialties",

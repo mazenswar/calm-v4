@@ -23,6 +23,7 @@ export default function FAQ({ faqConfig }) {
 		showToc,
 		groups,
 		id = "faq",
+		classNames = "",
 	} = faqConfig;
 
 	const filteredGroups = useMemo(() => {
@@ -61,7 +62,11 @@ export default function FAQ({ faqConfig }) {
 	}, []);
 
 	return (
-		<section className="block faq" aria-labelledby={`${id}-heading`} id={id}>
+		<section
+			className={`block faq ${classNames}`.trim()}
+			aria-labelledby={`${id}-heading`}
+			id={id}
+		>
 			<div className="block__content container">
 				<FadeUp as="div" className="faq__header">
 					<h2 id={`${id}-heading`}>{heading}</h2>

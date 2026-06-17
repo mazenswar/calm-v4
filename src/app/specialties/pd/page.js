@@ -1,10 +1,21 @@
+// /specialties/pd.js
 import PageHero from "../../components/sections/pageHero/PageHero";
 import TwoColumn from "../../components/sections/twoColumn/TwoColumn";
 import AudienceSection from "../../components/sections/audienceSection/AudienceSection";
 import FeatureGrid from "../../components/sections/featureGrid/FeatureGrid";
 import Steps from "../../components/sections/steps/Steps";
 import CTABanner from "../../components/sections/ctaBanner/CTABanner";
+import { generateMeta } from "../../../../config/metadata";
+// META ----------------------------------------------------------------------------
 
+export const metadata = generateMeta({
+	title: "Panic Disorder Therapy",
+	description:
+		"Therapy for panic disorder that helps you change your relationship with panic sensations, build nervous system resilience, and reduce fear of future attacks.",
+	path: "/specialties/pd",
+});
+
+// CONFIG ---------------------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: "Specialties",
 	heading: "Therapy for Panic Disorder",

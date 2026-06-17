@@ -4,7 +4,18 @@ import AudienceSection from "../../components/sections/audienceSection/AudienceS
 import FeatureGrid from "../../components/sections/featureGrid/FeatureGrid";
 import Steps from "../../components/sections/steps/Steps";
 import CTABanner from "../../components/sections/ctaBanner/CTABanner";
+import { generateMeta } from "../../../../config/metadata";
 
+// META ------------------------------------------------------------------
+
+export const metadata = generateMeta({
+	title: "Self-Esteem & Self-Worth Therapy",
+	description:
+		"Therapy to address the roots of low self-worth, separating who you are from the inherited beliefs that have shaped how you see yourself.",
+	path: "/specialties/self-worth",
+});
+
+// CONFIG -----------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: "Specialties",
 	heading: "Therapy for Self-Esteem & Self-Worth",

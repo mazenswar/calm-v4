@@ -1,6 +1,15 @@
+import { generateMeta } from "../../../config/metadata";
 import EventGrid from "../components/sections/eventGrid/EventGrid";
 import PageHero from "../components/sections/pageHero/PageHero";
+// META -------------------------------------------------------------------
 
+export const metadata = generateMeta({
+	title: "Events",
+	description:
+		"Upcoming workshops, talks, and community events hosted by CALM Therapy, focused on mental health education and connection across our service communities.",
+	path: "/events",
+});
+// CONFIG -----------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: null,
 	heading: "Events",

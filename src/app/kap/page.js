@@ -1,6 +1,5 @@
 import KapTimeline from "./components/KapTimeline";
 import KapPricingTable from "./components/KapPricingTable";
-
 import TwoColumn from "../components/sections/twoColumn/TwoColumn";
 import AudienceSection from "../components/sections/audienceSection/AudienceSection";
 import CTABanner from "../components/sections/ctaBanner/CTABanner";
@@ -8,6 +7,16 @@ import PageHero from "../components/sections/pageHero/PageHero";
 import ChipNav from "../components/ui/chipNav/ChipNav";
 import FeatureGrid from "../components/sections/featureGrid/FeatureGrid";
 import ResourceGrid from "../components/sections/resourceGrid/ResourceGrid";
+import { generateMeta } from "../../../config/metadata";
+// META -------------------------------------------------------------------------------
+
+export const metadata = generateMeta({
+	title: "Ketamine-Assisted Psychotherapy (KAP)",
+	description:
+		"Ketamine-assisted psychotherapy combines guided ketamine sessions with therapy to support healing and relief from treatment-resistant depression, anxiety, and emotional stuckness.",
+	path: "/kap",
+});
+// CONFIG -----------------------------------------------------------------------------
 
 /* =========================
    CHIP NAV

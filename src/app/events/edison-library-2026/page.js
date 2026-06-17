@@ -1,7 +1,16 @@
 import TwoColumn from "@/app/components/sections/twoColumn/TwoColumn";
 import EventHeader from "../components/eventHeader/EventHeader";
 import EventMap from "../components/eventMap/EventMap";
+import { generateMeta } from "../../../../config/metadata";
+// META -------------------------------------------------------------------------
 
+export const metadata = generateMeta({
+	title: "Anxiety Workshop at Edison Public Library | 2026",
+	description:
+		"Join CALM Therapy for a free community workshop on understanding and managing anxiety, hosted at the Edison Public Library. See dates, location, and what to expect.",
+	path: "/events/edison-library-2026",
+});
+// CONFIG ------------------------------------------------------------------------
 const eventHeaderConfig = {
 	status: "past",
 	title: "Understanding Anxiety",

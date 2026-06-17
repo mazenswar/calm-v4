@@ -1,7 +1,17 @@
 import CardGrid from "./components/sections/cardGrid/CardGrid";
 import Hero from "./components/sections/hero/Hero";
 import TwoColumn from "./components/sections/twoColumn/TwoColumn";
+import { generateMeta } from "../../config/metadata";
+// Meta ------------------------------------------------------------------------
 
+export const metadata = generateMeta({
+	title: "Virtual Therapy for Anxiety, OCD & Complex Trauma",
+	description:
+		"CALM Therapy provides virtual, integrative therapy for anxiety, OCD, complex trauma, and treatment-resistant conditions. We work with thoughtful, high-functioning adults seeking depth beyond symptom management, across 43 states and jurisdictions.",
+	path: "/",
+});
+
+// CONFIG -----------------------------------------------------------------------
 const heroConfig = {
 	eyebrow: null,
 	heading: "Modern Psychology, Timeless Wisdom",

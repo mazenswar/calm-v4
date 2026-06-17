@@ -3,7 +3,17 @@ import CTABanner from "../components/sections/ctaBanner/CTABanner";
 import FeatureGrid from "../components/sections/featureGrid/FeatureGrid";
 import PageHero from "../components/sections/pageHero/PageHero";
 import TwoColumn from "../components/sections/twoColumn/TwoColumn";
+import { generateMeta } from "../../../config/metadata";
 
+// META --------------------------------------------------------------------------
+export const metadata = generateMeta({
+	title: "About Tanya Singh, PhD | Founder & Clinical Psychologist",
+	description:
+		"Meet Tanya Singh, PhD, founder and licensed clinical psychologist at CALM Therapy. Learn about her clinical training, approach to integrative therapy, and the philosophy behind our practice.",
+	path: "/about",
+});
+
+// CONFIG ---------------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: null,
 	heading: "About CALM Therapy",

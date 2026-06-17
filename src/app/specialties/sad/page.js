@@ -1,9 +1,22 @@
+// /specialties/sad.js
 import PageHero from "../../components/sections/pageHero/PageHero";
 import TwoColumn from "../../components/sections/twoColumn/TwoColumn";
 import AudienceSection from "../../components/sections/audienceSection/AudienceSection";
 import FeatureGrid from "../../components/sections/featureGrid/FeatureGrid";
 import Steps from "../../components/sections/steps/Steps";
 import CTABanner from "../../components/sections/ctaBanner/CTABanner";
+import { generateMeta } from "../../../../config/metadata";
+
+// META -----------------------------------------------------------------------------------
+
+export const metadata = generateMeta({
+	title: "Social Anxiety Disorder (SAD) Therapy",
+	description:
+		"Therapy for social anxiety disorder that combines gradual exposure with deeper work on shame and self-worth, helping you reclaim your voice and authentic self.",
+	path: "/specialties/sad",
+});
+
+// CONFIG ---------------------------------------------------------------------------------
 
 const pageHeroConfig = {
 	eyebrow: "Specialties",

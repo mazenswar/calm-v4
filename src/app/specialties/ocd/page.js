@@ -1,3 +1,4 @@
+// /specialties/ocd.js
 import PageHero from "../../components/sections/pageHero/PageHero";
 import TwoColumn from "../../components/sections/twoColumn/TwoColumn";
 import AudienceSection from "../../components/sections/audienceSection/AudienceSection";
@@ -5,7 +6,16 @@ import FeatureGrid from "../../components/sections/featureGrid/FeatureGrid";
 import Steps from "../../components/sections/steps/Steps";
 import CTABanner from "../../components/sections/ctaBanner/CTABanner";
 import ResourceGrid from "../../components/sections/resourceGrid/ResourceGrid";
+import { generateMeta } from "../../../../config/metadata";
+// META ---------------------------------------------------------------------------
 
+export const metadata = generateMeta({
+	title: "Trauma-Informed OCD Therapy",
+	description:
+		"Evidence-based, trauma-informed OCD treatment combining ERP, I-CBT, and ACT with nervous system awareness and careful pacing for sustainable change.",
+	path: "/specialties/ocd",
+});
+// CONFIG -------------------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: "Specialties",
 	heading: "Trauma-Informed Treatment for OCD",

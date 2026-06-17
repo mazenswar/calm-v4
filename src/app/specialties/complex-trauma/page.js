@@ -6,7 +6,17 @@ import SplitList from "@/app/components/sections/splitList/SplitList";
 import Steps from "@/app/components/sections/steps/Steps";
 import TwoColumn from "@/app/components/sections/twoColumn/TwoColumn";
 import React from "react";
+import { generateMeta } from "../../../../config/metadata";
+// META --------------------------------------------------------------------------------
 
+export const metadata = generateMeta({
+	title: "Complex Trauma Therapy",
+	description:
+		"Therapy for complex trauma that pairs grounding skills with deeper work to rebuild safety, clarity, and self-compassion. Virtual sessions for adults nationwide.",
+	path: "/specialties/complex-trauma",
+});
+
+// CONFIG -------------------------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: "Specialties",
 	heading: "Therapy for Complex Trauma",

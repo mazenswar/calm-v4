@@ -1,5 +1,14 @@
+import { generateMeta } from "../../../config/metadata";
 import FAQ from "../components/sections/faq/FAQ";
+// META ------------------------------------------------------------------------------
 
+export const metadata = generateMeta({
+	title: "FAQ | Therapy, Fees & Getting Started",
+	description:
+		"Answers to common questions about starting therapy with CALM Therapy, including fees, insurance reimbursement, scheduling, and what to expect from virtual sessions.",
+	path: "/faq",
+});
+// CONFIG -----------------------------------------------------------------------------
 const faqConfig = {
 	id: "faq",
 	heading: "Questions People Often Ask",

@@ -1,3 +1,4 @@
+// specialties/bdd.js
 import AudienceSection from "@/app/components/sections/audienceSection/AudienceSection";
 import CTABanner from "@/app/components/sections/ctaBanner/CTABanner";
 import FeatureGrid from "@/app/components/sections/featureGrid/FeatureGrid";
@@ -5,7 +6,17 @@ import PageHero from "@/app/components/sections/pageHero/PageHero";
 import Steps from "@/app/components/sections/steps/Steps";
 import TwoColumn from "@/app/components/sections/twoColumn/TwoColumn";
 import React from "react";
+import { generateMeta } from "../../../../config/metadata";
+// META -------------------------------------------------------------------------
 
+export const metadata = generateMeta({
+	title: "Body Dysmorphic Disorder (BDD) Therapy",
+	description:
+		"Therapy for Body Dysmorphic Disorder that addresses the shame and self-criticism behind distorted self-image, helping you build a more compassionate relationship with yourself.",
+	path: "/specialties/bdd",
+});
+
+// CONFIG ------------------------------------------------------------------------
 const pageHeroConfig = {
 	eyebrow: "Specialties",
 	heading: "Therapy for Body Dysmorphic Disorder (BDD)",
