@@ -1,10 +1,15 @@
 /** @type {import('next').NextConfig} */
+const projectRoot = new URL(".", import.meta.url).pathname;
+
 const nextConfig = {
 	reactStrictMode: true,
-	
+
+	outputFileTracingRoot: projectRoot,
+
 	turbopack: {
-		root: new URL(".", import.meta.url).pathname,
+		root: projectRoot,
 	},
+
 	// Next/Image: allow Sanity CDN (project images)
 	images: {
 		remotePatterns: [
@@ -19,7 +24,6 @@ const nextConfig = {
 
 	async redirects() {
 		return [
-			// Redirect old misspelled routes to correct spelling
 			{
 				source: "/specialities/:slug*",
 				destination: "/specialties/:slug*",
@@ -28,7 +32,6 @@ const nextConfig = {
 		];
 	},
 
-	// Basic, broadly compatible security headers.
 	async headers() {
 		return [
 			{
