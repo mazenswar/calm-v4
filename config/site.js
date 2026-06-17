@@ -15,7 +15,7 @@ const site = {
 	// Analytics
 	analytics: {
 		ga4: null, // or null to disable
-		gtm: null, // "GTM-XXXXXXX" or null
+		gtm: "GTM-TTJTRRL2", // "GTM-XXXXXXX" or null GTM-TTJTRRL2
 	},
 	// Contact
 	email: "info@calmtherapy.center",
