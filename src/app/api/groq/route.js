@@ -29,7 +29,7 @@ export async function GET(request) {
 	try {
 		const count = await c.fetch(`count(*[_type=="post"])`);
 		const sample = await c.fetch(
-			`*[_type=="post"] | order(coalesce(publishedAt,_createdAt) desc)[0...3]{_id,title,"slug":slug.current}`
+			`*[_type=="post"] | order(coalesce(publishedAt,_createdAt) desc)[0...3]{_id,title,"slug":slug.current}`,
 		);
 		return NextResponse.json({
 			ok: true,
