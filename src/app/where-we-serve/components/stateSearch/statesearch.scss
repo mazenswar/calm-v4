@@ -1,0 +1,88 @@
+@use "../../../styles/mixins" as *;
+
+.state-search {
+	.state-search__bar {
+		max-width: 480px;
+		margin-bottom: var(--space-10);
+	}
+
+	.state-search__label {
+		display: block;
+		font-weight: var(--font-weight-semibold);
+		color: var(--color-text);
+		margin-bottom: var(--space-3);
+	}
+
+	.state-search__input {
+		width: 100%;
+		min-height: var(--min-tap-target);
+		padding: var(--space-3) var(--space-4);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-md);
+		font-size: var(--font-size-md);
+		color: var(--color-text);
+		background-color: var(--color-surface);
+
+		&:focus-visible {
+			outline: var(--focus-ring);
+			border-color: var(--brand-1);
+		}
+	}
+
+	.state-search__result-count {
+		margin: var(--space-2) 0 0;
+		font-size: var(--font-size-sm);
+		color: var(--color-muted);
+		min-height: 1.4em;
+	}
+
+	.state-search__group {
+		margin-bottom: var(--space-10);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.state-search__group-heading {
+		margin: 0 0 var(--space-5);
+		font-size: var(--font-size-lg);
+		color: var(--brand-1);
+	}
+
+	.state-search__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--space-3);
+
+		@include respond(md) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	.state-search__item {
+		padding: var(--space-3) var(--space-4);
+		background-color: var(--color-background-alt);
+		border-radius: var(--radius-md);
+		font-size: var(--font-size-sm);
+		color: var(--color-text);
+	}
+
+	.state-search__item--home {
+		background-color: var(--brand-1);
+		color: var(--brand-5);
+		font-weight: var(--font-weight-semibold);
+	}
+
+	.state-search__empty {
+		margin: 0;
+		padding: var(--space-6);
+		background-color: var(--color-background-alt);
+		border-radius: var(--radius-lg);
+		color: var(--color-muted);
+		line-height: 1.6;
+	}
+}

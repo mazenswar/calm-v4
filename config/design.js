@@ -64,6 +64,13 @@ export const palettes = [
 		group: "dark",
 		swatches: ["#c17c74", "#2a3d45", "#ddc9b4"],
 	},
+	{
+		id: "calm",
+		label: "calm",
+		description: "CALM Brand",
+		group: "light",
+		swatches: ["#7f5a83", "#4c2f6f;", "#fff7f3"],
+	},
 ];
 
 export const fontPairings = [

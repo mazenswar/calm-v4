@@ -68,7 +68,8 @@ a {
 
 	&:hover {
 		background: var(--brand-2);
-		color: var(--brand-5);
+		color: var(--brand-1);
+		border: 2px solid var(--brand-1);
 	}
 
 	&:focus-visible {

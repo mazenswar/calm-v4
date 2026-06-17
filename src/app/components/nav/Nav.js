@@ -10,28 +10,52 @@ import "./nav.scss";
    ========================= */
 
 const logo = {
-	src: "/logo/binswar-white-b.png",
-	alt: "Binswar",
+	src: "/logo/logo-hr.webp",
+	alt: "Calm Therapy Logo",
 	width: 140,
 	height: 40,
 };
 
 const links = [
 	{
-		label: "Services",
+		label: "Specialties",
 		items: [
-			{ label: "Audit", href: "/audit" },
-			{ label: "New Website", href: "/new-website" },
+			{
+				label: "Anxiety, OCD & Related Conditions",
+				href: "/specialties/anxiety-ocd",
+			},
+			{ label: "Gifted Adults", href: "/specialties/gifted-adults" },
+			{ label: "Complex Trauma", href: "/specialties/complex-trauma" },
+			{ label: "Treatment-Resistant Conditions", href: "treatment-resistant" },
+			{
+				label: "Spiritual and Transformative Experiences",
+				href: "/specialties/spiritual-transformative-experiences",
+			},
+			{ label: "Ketamine-Assisted Psychotherapy", href: "/kap" },
 		],
 	},
+	{
+		label: "Community",
+		items: [
+			{ label: "Community Spot", href: "/community-spot" },
+			{ label: "Events", href: "/events" },
+			{ label: "Peer Groups", href: "/peer-groups" },
+		],
+	},
+	{ label: "Fees & Insurance", href: "/fees-and-insurance" },
 	{ label: "About", href: "/about" },
-	{ label: "Process", href: "/process" },
-	{ label: "Work", href: "/work" },
-	// { label: "Contact", href: "/contact" },
+	{
+		label: "Resources",
+		items: [
+			{ label: "Blog", href: "/blog" },
+			{ label: "FAQ", href: "/faq" },
+			{ label: "Where We Serve", href: "/where-we-serve" },
+		],
+	},
 ];
 
 const cta = {
-	text: "Book A Consult",
+	text: "Book",
 	href: "https://calendly.com/mazen-binswar/30min",
 	variant: "primary",
 	external: true,

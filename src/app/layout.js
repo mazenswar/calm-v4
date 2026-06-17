@@ -44,8 +44,8 @@ export default function RootLayout({ children }) {
 	return (
 		<html
 			lang="en"
-			data-theme="clean"
-			data-font="editorial"
+			data-theme="calm"
+			data-font="clinical"
 			data-style="split-contained"
 			data-shape="round"
 			data-spacing="airy"
@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
 				<a href="#main-content" className="skip-nav">
 					Skip to main content
 				</a>
-				<DesignPanel />
+				{/* <DesignPanel /> */}
 				<Nav />
 
 				{children}

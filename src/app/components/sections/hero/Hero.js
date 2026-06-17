@@ -20,7 +20,7 @@ function useStyle() {
 				document.documentElement.getAttribute("data-style") || "split-contained"
 			);
 		}
-		return "hero-background";
+		return "split-contained";
 	});
 
 	useEffect(() => {

@@ -21,6 +21,12 @@ export default function FadeUp({
 	const [prefersReduced, setPrefersReduced] = useState(getPrefersReduced);
 	const [visible, setVisible] = useState(getPrefersReduced);
 
+	// Mark document as JS-ready so CSS animation styles apply
+	useEffect(() => {
+		document.documentElement.setAttribute("data-js-ready", "");
+	}, []);
+
+	// Watch for prefers-reduced-motion changes
 	useEffect(() => {
 		const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
 		const handler = (e) => setPrefersReduced(e.matches);
@@ -28,6 +34,7 @@ export default function FadeUp({
 		return () => mq.removeEventListener("change", handler);
 	}, []);
 
+	// Intersection observer
 	useEffect(() => {
 		if (prefersReduced) return;
 

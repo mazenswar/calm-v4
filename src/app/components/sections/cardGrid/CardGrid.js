@@ -1,24 +1,40 @@
-// components/sections/CardGrid/CardGrid.js
+"use client";
 import Link from "next/link";
 import Button from "../../ui/Button";
+import FadeUp from "../../ui/fadeUp/FadeUp";
+import StaggerGrid from "../../ui/staggerGrid/StaggerGrid";
 import "./cardgrid.scss";
 
 export default function CardGrid({ cardGridConfig }) {
+	const {
+		heading,
+		subheading,
+		cards,
+		cta,
+		id = "card-grid",
+		classNames = "",
+	} = cardGridConfig;
+
 	return (
 		<section
-			className="block blockTint card-grid"
-			aria-labelledby="card-grid-heading"
+			className={`block card-grid ${classNames}`.trim()}
+			aria-labelledby={`${id}-heading`}
 		>
 			<div className="block__content container">
-				<div className="card-grid__header">
-					<h2 id="card-grid-heading">{cardGridConfig.heading}</h2>
-					{cardGridConfig.subheading && (
-						<p className="card-grid__sub">{cardGridConfig.subheading}</p>
-					)}
-				</div>
+				<FadeUp as="div" className="card-grid__header">
+					<h2 id={`${id}-heading`}>{heading}</h2>
+					{subheading && <p className="card-grid__sub">{subheading}</p>}
+				</FadeUp>
 
-				<div className="card-grid__grid">
-					{cardGridConfig.cards.map((card) => (
+				<StaggerGrid
+					as="ul"
+					itemAs="li"
+					className="card-grid__grid"
+					role="list"
+					baseDelay={150}
+					stagger={100}
+				>
+					{cards.map((card) => (
 						<Link key={card.href} href={card.href} className="card">
 							<div className="card__inner">
 								<h3 className="card__title">{card.title}</h3>
@@ -31,16 +47,16 @@ export default function CardGrid({ cardGridConfig }) {
 							</div>
 						</Link>
 					))}
-				</div>
+				</StaggerGrid>
 
-				{cardGridConfig.cta && (
-					<div className="card-grid__footer">
+				{cta && (
+					<FadeUp as="div" className="card-grid__footer" delay={400}>
 						<Button
-							text={cardGridConfig.cta.text}
-							href={cardGridConfig.cta.href}
-							variant={cardGridConfig.cta.variant ?? "secondary"}
+							text={cta.text}
+							href={cta.href}
+							variant={cta.variant ?? "secondary"}
 						/>
-					</div>
+					</FadeUp>
 				)}
 			</div>
 		</section>

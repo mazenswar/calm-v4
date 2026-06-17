@@ -8,9 +8,9 @@ import {
 import "./designpanel.scss";
 
 const DEFAULTS = {
-	palette: "slate-mauve",
+	palette: "calm",
 	font: "binswar",
-	style: "hero-background",
+	style: "split-container",
 };
 
 export default function DesignPanel() {

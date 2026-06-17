@@ -8,7 +8,7 @@ import "./footer.scss";
 
 const contact = {
 	// phone: "(555) 123-4567",
-	email: "mazen@binswar.com",
+	email: "info@calmtherapy.com",
 	// address: "123 Main St, Suite 4, New York, NY 10001",
 	// virtual: "Serving clients across New Jersey & New York",
 };
@@ -56,7 +56,7 @@ const legalLinks = [
 const seoLine = null;
 
 const copyright = {
-	name: "Binswar LLC",
+	name: "Calm Therapy LLC",
 	// creditText: "Site by Binswar",
 	// creditHref: "https://binswar.com",
 };

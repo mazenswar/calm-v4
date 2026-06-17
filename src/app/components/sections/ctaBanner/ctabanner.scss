@@ -8,7 +8,7 @@
 
 		h2,
 		.cta-banner__sub {
-			color: var(--color-text);
+			// color: var(--color-text);
 		}
 
 		.cta-banner__sub {
@@ -27,11 +27,13 @@
 		}
 
 		.btnGhost {
-			color: var(--color-surface);
+			border: 2px solid var(--brand-1);
+			color: var(--brand-1);
 
 			&:hover,
 			&:focus-visible {
-				background: color-mix(in oklab, var(--color-surface) 15%, transparent);
+				background: var(--brand-1);
+				color: var(--brand-5);
 			}
 		}
 	}

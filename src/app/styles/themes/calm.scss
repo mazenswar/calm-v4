@@ -1,0 +1,21 @@
+/* styles/themes/calm.scss */
+[data-theme="calm"] {
+	--color-bg: #fff7f3;
+	--color-surface: #ffffff;
+	--color-text: #4d4d4d;
+	--color-muted: #6b7280;
+	--color-border: #e7c8e7;
+	--color-background-alt: #fcf3e8;
+
+	--brand-1: #7f5a83;
+	--brand-2: #f9d8cd;
+	--brand-3: #4c2f6f;
+	--brand-4: #52489f;
+	--brand-5: #ffffff;
+
+	--accent-1: #174ea6;
+
+	--shadow-1:
+		0 1px 3px rgba(127, 90, 131, 0.08), 0 1px 2px rgba(127, 90, 131, 0.05);
+	--shadow-2: 0 4px 12px rgba(127, 90, 131, 0.12);
+}

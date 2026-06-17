@@ -47,10 +47,16 @@ export default function FAQ({ faqConfig }) {
 		const el = document.getElementById(hash);
 		if (el?.tagName === "DETAILS") {
 			el.setAttribute("open", "");
-			setTimeout(
-				() => el.scrollIntoView({ behavior: "smooth", block: "start" }),
-				60,
-			);
+
+			// Find the summary inside, since that's the actual interactive
+			// element a keyboard or screen reader user should land on, not
+			// the details wrapper itself.
+			const summary = el.querySelector("summary");
+
+			setTimeout(() => {
+				el.scrollIntoView({ behavior: "smooth", block: "start" });
+				summary?.focus();
+			}, 60);
 		}
 	}, []);
 

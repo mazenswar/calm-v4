@@ -1,0 +1,11 @@
+.event-map {
+	.event-map__embed {
+		border-radius: var(--radius-lg);
+		overflow: hidden;
+		box-shadow: var(--shadow-1);
+
+		iframe {
+			display: block;
+		}
+	}
+}

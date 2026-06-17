@@ -1,0 +1,214 @@
+@use "../../../styles/mixins" as *;
+
+.oon-section {
+	.oon-section__header {
+		margin-bottom: var(--space-8);
+
+		h2 {
+			margin: 0 0 var(--space-3);
+		}
+	}
+
+	.oon-section__intro {
+		margin: 0;
+		max-width: 70ch;
+		line-height: 1.6;
+	}
+
+	.oon-section__subheading {
+		margin: 0 0 var(--space-3);
+		font-size: var(--font-size-lg);
+	}
+
+	/* ── Warning block: visually distinct, the honesty moment ── */
+
+	.oon-section__warning {
+		margin-bottom: var(--space-10);
+		background-color: var(--color-background-alt);
+		border: 2px solid var(--brand-1);
+		border-radius: var(--radius-lg);
+		padding: var(--space-8);
+	}
+
+	.oon-section__warning-heading {
+		margin: 0 0 var(--space-4);
+		font-size: var(--font-size-lg);
+		color: var(--brand-1);
+	}
+
+	.oon-section__warning-text {
+		margin: 0 0 var(--space-4);
+		line-height: 1.65;
+		color: var(--color-text);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	/* ── Glossary ── */
+
+	.oon-section__glossary {
+		margin-bottom: var(--space-10);
+		background-color: var(--color-surface);
+		border-radius: var(--radius-lg);
+		border: 1px solid var(--color-border);
+		padding: var(--space-6);
+	}
+
+	.oon-section__glossary-list {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-4);
+	}
+
+	.oon-section__glossary-item {
+		padding-bottom: var(--space-4);
+		border-bottom: 1px solid var(--color-border);
+
+		&:last-child {
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+	}
+
+	.oon-section__glossary-term {
+		margin: 0 0 var(--space-1);
+		font-weight: var(--font-weight-semibold);
+		color: var(--brand-1);
+	}
+
+	.oon-section__glossary-definition {
+		margin: 0;
+		color: var(--color-muted);
+		font-size: var(--font-size-sm);
+		line-height: 1.6;
+	}
+
+	/* ── Check benefits block ── */
+
+	.oon-section__check {
+		margin-bottom: var(--space-12);
+	}
+
+	.oon-section__check-intro {
+		margin: 0 0 var(--space-5);
+		max-width: 65ch;
+		color: var(--color-muted);
+		line-height: 1.6;
+	}
+
+	.oon-section__questions-card {
+		background-color: var(--color-surface);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-lg);
+		padding: var(--space-6);
+		.btnGhost {
+			background: var(--brand-4);
+			color: var(--brand-5);
+			&:hover {
+				background: var(--brand-2);
+				// border: 2px solid var(--brand-1);
+				color: var(--brand-5);
+			}
+		}
+	}
+
+	.oon-section__questions {
+		list-style: none;
+		margin: 0 0 var(--space-6);
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-5);
+	}
+
+	.oon-section__question {
+		padding-bottom: var(--space-5);
+		border-bottom: 1px solid var(--color-border);
+
+		&:last-child {
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+	}
+
+	.oon-section__question-text {
+		margin: 0 0 var(--space-2);
+		font-weight: var(--font-weight-semibold);
+		color: var(--color-text);
+		line-height: 1.5;
+	}
+
+	.oon-section__question-explanation {
+		margin: 0;
+		color: var(--color-muted);
+		font-size: var(--font-size-sm);
+		line-height: 1.6;
+		padding-left: var(--space-4);
+		border-left: 2px solid var(--brand-1);
+	}
+
+	.oon-section__questions-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-3);
+	}
+
+	.oon-section__copy-status {
+		margin: var(--space-3) 0 0;
+		font-size: var(--font-size-sm);
+		color: var(--brand-1);
+		min-height: 1.5em;
+	}
+
+	/* ── Reimbursement steps ── */
+
+	.oon-section__steps-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-6);
+
+		@include respond(md) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: var(--space-8);
+		}
+	}
+
+	.oon-section__step {
+		display: flex;
+		gap: var(--space-4);
+		align-items: flex-start;
+	}
+
+	.oon-section__step-number {
+		width: 36px;
+		height: 36px;
+		border-radius: 999px;
+		background-color: var(--brand-1);
+		color: var(--brand-5);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: var(--font-size-sm);
+		font-weight: var(--font-weight-semibold);
+		flex-shrink: 0;
+	}
+
+	.oon-section__step-title {
+		margin: 0 0 var(--space-2);
+		font-size: var(--font-size-md);
+	}
+
+	.oon-section__step-description {
+		margin: 0;
+		color: var(--color-muted);
+		font-size: var(--font-size-sm);
+		line-height: 1.6;
+	}
+}

@@ -1,0 +1,34 @@
+@use "../../../styles/mixins" as *;
+
+.community-spot-cta {
+	.community-spot-cta__inner {
+		text-align: center;
+		max-width: 60ch;
+		margin: 0 auto;
+
+		h2 {
+			margin: 0 0 var(--space-3);
+		}
+
+		p {
+			margin: 0 0 var(--space-6);
+			color: var(--color-muted);
+			line-height: 1.6;
+
+			a {
+				color: var(--brand-1);
+				text-decoration: underline;
+				text-underline-offset: 2px;
+
+				&:hover {
+					color: var(--brand-3);
+				}
+
+				&:focus-visible {
+					outline: var(--focus-ring);
+					border-radius: 2px;
+				}
+			}
+		}
+	}
+}

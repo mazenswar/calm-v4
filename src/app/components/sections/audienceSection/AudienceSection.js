@@ -42,11 +42,13 @@ export default function AudienceSection({ audienceConfig }) {
 		variant = "split",
 		items,
 		cta,
+		classNames = "",
 	} = audienceConfig;
 
 	return (
 		<section
-			className={`block audience audience--${variant}`}
+			id={id}
+			className={`block audience audience--${variant} ${classNames}`.trim()}
 			aria-labelledby={`${id}-heading`}
 		>
 			<div className="block__content container">
