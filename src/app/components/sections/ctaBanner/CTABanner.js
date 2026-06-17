@@ -15,8 +15,9 @@ import "./ctabanner.scss";
 // 	variant: "brand", // "brand" | "dark" | "light"
 // 	cta: {
 // 		text: "Get in touch",
-// 		href: "/contact",
+// 		href: "https://zencare.co/provider/therapist/tanya-singh",
 // 		variant: "secondary",
+// 		external: true,
 // 	},
 // 	secondaryCta: null,
 // 	// Optional second button example:

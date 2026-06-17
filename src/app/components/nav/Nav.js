@@ -56,7 +56,7 @@ const links = [
 
 const cta = {
 	text: "Book",
-	href: "https://calendly.com/mazen-binswar/30min",
+	href: "https://zencare.co/provider/therapist/tanya-singh",
 	variant: "primary",
 	external: true,
 };

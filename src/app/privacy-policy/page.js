@@ -22,7 +22,7 @@ const legalContentConfig = {
 			id: "information-we-collect",
 			heading: "Information We Collect",
 			paragraphs: [
-				"We do not collect personal information through this website. When you choose to book a consultation or appointment, you are securely redirected to our SimplePractice client portal, a HIPAA-compliant platform, where you may voluntarily provide your name, contact information, and other relevant details to request an appointment or consultation.",
+				"We do not collect personal information through this website. When you choose to schedule a consultation, you are directed to our Zencare booking page, where you may voluntarily provide your name, contact information, and other relevant details to request an appointment or consultation.",
 			],
 		},
 		{
@@ -44,7 +44,7 @@ const legalContentConfig = {
 			id: "data-sharing-and-security",
 			heading: "Data Sharing and Security",
 			paragraphs: [
-				"We do not sell, rent, or share your personal information with third parties. Initial appointment bookings occur via SimplePractice, a HIPAA-compliant platform. Ongoing communication for scheduling adjustments may also occur via email or text, depending on client preferences. We use Google Workspace for email communications, which is covered under a signed Business Associate Agreement (BAA) in compliance with HIPAA requirements. No client data is stored directly on our website.",
+				"We do not sell, rent, or share your personal information with third parties. Initial appointment requests are scheduled through Zencare. Once you become a client, your clinical records, billing, and ongoing care are managed through SimplePractice, a HIPAA-compliant electronic health record platform. Ongoing communication for scheduling adjustments may also occur via email or text, depending on client preferences. We use Google Workspace for email communications, which is covered under a signed Business Associate Agreement (BAA) in compliance with HIPAA requirements. No client data is stored directly on our website.",
 			],
 		},
 		{

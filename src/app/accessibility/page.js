@@ -43,7 +43,7 @@ const legalContentConfig = {
 			id: "limitations",
 			heading: "Known Limitations",
 			paragraphs: [
-				"Some third-party components on this site, including our appointment booking system (SimplePractice), are provided by external vendors and may not fully meet the same accessibility standards. We have chosen SimplePractice as our booking platform because it is HIPAA-compliant and designed for healthcare providers. If you experience difficulty with the booking process, please contact us directly and we will assist you.",
+				"Some third-party components on this site, including our scheduling platform (Zencare), are provided by external vendors and may not fully meet the same accessibility standards as the rest of this website. If you experience difficulty scheduling a consultation, please contact us directly and we will assist you.",
 			],
 		},
 		{

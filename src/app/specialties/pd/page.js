@@ -199,8 +199,9 @@ const ctaBannerConfig = {
 	variant: "brand",
 	cta: {
 		text: "Schedule a Consultation",
-		href: "/contact",
+		href: "https://zencare.co/provider/therapist/tanya-singh",
 		variant: "primary",
+		external: true,
 	},
 	secondaryCta: null,
 };

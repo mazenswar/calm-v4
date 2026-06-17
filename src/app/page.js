@@ -19,8 +19,9 @@ const heroConfig = {
 		"Virtual therapy for thoughtful adults navigating anxiety, OCD & intrusive thoughts, complex trauma, perfectionism, spiritual uncertainty, and burnout, available in 43 U.S. states and jurisdictions from our East Coast base.",
 	cta: {
 		text: "Schedule a Consult",
-		href: "/contact",
+		href: "https://zencare.co/provider/therapist/tanya-singh",
 		variant: "primary",
+		external: true,
 	},
 	ctaSecondary: null,
 	images: {
