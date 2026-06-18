@@ -40,7 +40,7 @@ const introConfig = {
 		src: "/images/pd.webp",
 		alt: "Capture of a powerful geyser eruption",
 		width: 600,
-		height: 750,
+		height: 600,
 	},
 	imagePosition: "right",
 };

@@ -63,10 +63,10 @@ const introConfig = {
 	list: null,
 	cta: null,
 	image: {
-		src: "/images/waves.webp",
+		src: "/images/kap/kap-waves.webp",
 		alt: "",
-		width: 600,
-		height: 600,
+		width: 400,
+		height: 400,
 	},
 };
 

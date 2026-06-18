@@ -40,7 +40,7 @@ const introConfig = {
 		src: "/images/refraction.webp",
 		alt: "Close-up of a water droplet showcasing vibrant rainbow refraction.",
 		width: 600,
-		height: 750,
+		height: 600,
 	},
 	imagePosition: "right",
 };

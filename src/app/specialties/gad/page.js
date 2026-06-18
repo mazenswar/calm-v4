@@ -41,7 +41,7 @@ const introConfig = {
 		src: "/images/gad.webp",
 		alt: "grey cloudy sky",
 		width: 600,
-		height: 750,
+		height: 600,
 	},
 	imagePosition: "right",
 };

@@ -31,7 +31,7 @@ const introConfig = {
 	list: null,
 	cta: null,
 	image: {
-		src: "/images/trees-from-below.webp",
+		src: "/images/anxiety-ocd/trees-from-below.webp",
 		alt: "A mesmerizing view upwards through tall bare trees into a cloudy sky.",
 		width: 600,
 		height: 600,

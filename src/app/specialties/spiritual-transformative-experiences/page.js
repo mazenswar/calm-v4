@@ -37,7 +37,7 @@ const introConfig = {
 		src: "/images/soft-light-forest.webp",
 		alt: "Soft light filtering through a misty forest",
 		width: 600,
-		height: 750,
+		height: 600,
 	},
 	imagePosition: "right",
 };

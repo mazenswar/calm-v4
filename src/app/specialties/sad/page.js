@@ -42,7 +42,7 @@ const introConfig = {
 		src: "/images/sad.webp",
 		alt: "Raindrops on a window with blurred city lights create a vibrant bokeh effect at night.",
 		width: 600,
-		height: 750,
+		height: 600,
 	},
 	imagePosition: "right",
 };
