@@ -14,7 +14,7 @@ const inclusion = {
 		"Committed to inclusion and respect for all people across gender, race, ethnicity, and identity.",
 	image: {
 		src: "/images/footer/diversity.webp",
-		alt: "",
+		alt: "Colorful silhouettes representing a diverse and inclusive community.",
 		width: 68,
 		height: 68,
 	},
@@ -27,20 +27,22 @@ const directories = {
 			label: "Journey Clinical",
 			href: "https://www.journeyclinical.com",
 			src: "/badges/jc.png",
+			alt: "Journey Clinical logo",
 		},
 		{
 			label: "Asian Mental Health Collective",
 			href: "https://www.asianmhc.org",
 			src: "/badges/asianmhc.png",
+			alt: "Asian Mental Health Collective logo",
+		},
+		{
+			label: "Zencare",
+			href: "https://zencare.co/provider/therapist/tanya-singh",
+			src: "/badges/zencare.webp",
+			classNames: "footer__zencare-badge",
+			alt: "Zencare logo",
 		},
 	],
-	zencareBadge: {
-		title: "Zencare Therapist Badge",
-		src: "https://webassets.zencare.co/badges/therapist_turquoise.png",
-		href: "https://zencare.co/provider/therapist/tanya-singh",
-		width: 70,
-		height: 24,
-	},
 };
 
 const memberships = {
@@ -50,16 +52,19 @@ const memberships = {
 			label: "New Jersey Psychological Association",
 			href: "https://psychologynj.org",
 			src: "/badges/njpa.png",
+			alt: "New Jersey Psychological Association logo",
 		},
 		{
 			label: "New York Psychological Association",
 			href: "https://nyspa.org",
 			src: "/badges/nyspa.png",
+			alt: "New York Psychological Association logo",
 		},
 		{
 			label: "Anxiety and Depression Association of America",
 			href: "https://adaa.org",
 			src: "/badges/adaa.png",
+			alt: "Anxiety and Depression Association of America logo",
 		},
 	],
 };
@@ -85,11 +90,11 @@ function LogoRow({ logos }) {
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label={`${logo.label} (opens in a new tab)`}
-						className="footer__logo-link"
+						className={`footer__logo-link ${logo.classNames || ""}`.trim()}
 					>
 						<Image
 							src={logo.src}
-							alt={logo.label}
+							alt={logo.alt}
 							width={160}
 							height={32}
 							className="footer__logo-img"
@@ -137,23 +142,6 @@ export default function Footer() {
 					<div className="footer__col">
 						<p className="footer__col-label">{directories.heading}</p>
 						<LogoRow logos={directories.logos} />
-
-						{directories.zencareBadge && (
-							<a
-								href={directories.zencareBadge.href}
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="View our Zencare therapist profile (opens in a new tab)"
-								className="footer__zencare-badge"
-							>
-								<img
-									src={directories.zencareBadge.src}
-									alt="Zencare Therapist Badge"
-									width={directories.zencareBadge.width}
-									height={directories.zencareBadge.height}
-								/>
-							</a>
-						)}
 					</div>
 
 					{/* Memberships */}

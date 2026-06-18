@@ -196,29 +196,29 @@
 	}
 }
 
-.footer__zencare-badge {
-	display: inline-flex;
-	margin-top: var(--space-4);
-	opacity: 1;
-	transition: opacity var(--transition-fast);
-	background: var(--color-surface);
-	padding: var(--space-2) var(--space-4);
-	border-radius: var(--radius-xl);
-	width: fit-content;
+// .footer__zencare-badge {
+// 	display: inline-flex;
+// 	margin-top: var(--space-4);
+// 	opacity: 1;
+// 	transition: opacity var(--transition-fast);
+// 	background: var(--color-surface);
+// 	padding: var(--space-2) var(--space-4);
+// 	border-radius: var(--radius-xl);
+// 	width: fit-content;
 
-	&:hover,
-	&:focus-visible {
-		opacity: 0.85;
-	}
+// 	&:hover,
+// 	&:focus-visible {
+// 		opacity: 0.85;
+// 	}
 
-	&:focus-visible {
-		outline: var(--focus-ring);
-		outline-offset: var(--focus-offset);
-	}
+// 	&:focus-visible {
+// 		outline: var(--focus-ring);
+// 		outline-offset: var(--focus-offset);
+// 	}
 
-	img {
-		display: block;
-		height: 24px;
-		width: auto;
-	}
-}
+// 	img {
+// 		display: block;
+// 		height: 24px;
+// 		width: auto;
+// 	}
+// }

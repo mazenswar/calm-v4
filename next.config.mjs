@@ -20,6 +20,12 @@ const nextConfig = {
 				pathname: "/images/**",
 			},
 		],
+		// Added 430 and 660 to the default bucket list to better match
+		// mobile hero rendering at ~371-400px CSS width / high-DPR phones
+		// (Lighthouse flagged 17KB waste on the home hero at 750w).
+		// Everything from 640 up is untouched, so desktop image
+		// selection should be unaffected.
+		deviceSizes: [430, 640, 660, 750, 828, 1080, 1200, 1920, 2048, 3840],
 	},
 
 	async redirects() {
