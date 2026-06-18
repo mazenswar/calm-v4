@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import StaggerGrid from "../../ui/staggerGrid/StaggerGrid";
 import Image from "next/image";

@@ -1,4 +1,3 @@
-"use client";
 import FadeUp from "../../components/ui/fadeUp/FadeUp";
 import "./kaptimeline.scss";
 

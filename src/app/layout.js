@@ -26,18 +26,7 @@ export const metadata = generateMeta({
 
 // Load fonts for the active theme
 
-const fontClasses = [
-	warmBody.variable,
-	warmHeading.variable,
-	cleanBody.variable,
-	cleanHeading.variable,
-	boldBody.variable,
-	boldHeading.variable,
-	earthBody.variable,
-	earthHeading.variable,
-	minimalBody.variable,
-	minimalHeading.variable,
-].join(" ");
+const fontClasses = [boldBody.variable, boldHeading.variable].join(" ");
 
 export default function RootLayout({ children }) {
 	return (

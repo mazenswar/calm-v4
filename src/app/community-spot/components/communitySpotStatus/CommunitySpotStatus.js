@@ -1,5 +1,3 @@
-"use client";
-
 import FadeUp from "@/app/components/ui/fadeUp/FadeUp";
 import "./communityspotstatus.scss";
 import Button from "@/app/components/ui/Button";

@@ -1,4 +1,3 @@
-"use client";
 import Button from "../../ui/Button";
 import FadeUp from "../../ui/fadeUp/FadeUp";
 import "./ctabanner.scss";

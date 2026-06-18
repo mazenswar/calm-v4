@@ -1,5 +1,3 @@
-"use client";
-
 import FadeUp from "../../ui/fadeUp/FadeUp";
 import "./publicationslist.scss";
 
