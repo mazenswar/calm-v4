@@ -26,7 +26,7 @@ const heroConfig = {
 	ctaSecondary: null,
 	images: {
 		portrait: {
-			src: "/images/ts-home.jpg",
+			src: "/images/ts-home-hero.webp",
 			alt: "Tanya Singh, PhD, smiling in a professional setting",
 		},
 		background: null,
