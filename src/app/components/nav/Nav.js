@@ -26,7 +26,10 @@ const links = [
 			},
 			{ label: "Gifted Adults", href: "/specialties/gifted-adults" },
 			{ label: "Complex Trauma", href: "/specialties/complex-trauma" },
-			{ label: "Treatment-Resistant Conditions", href: "treatment-resistant" },
+			{
+				label: "Treatment-Resistant Conditions",
+				href: "/specialties/treatment-resistant",
+			},
 			{
 				label: "Spiritual and Transformative Experiences",
 				href: "/specialties/spiritual-transformative-experiences",

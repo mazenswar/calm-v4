@@ -42,9 +42,9 @@ export default function CommunitySpotCTA({ communitySpotCtaConfig }) {
 								for affordable therapy options.
 							</p>
 							<Button
-								url={formUrl}
+								href={formUrl}
 								text="Complete the Application"
-								newWindow={true}
+								external={true}
 							/>
 						</>
 					)}

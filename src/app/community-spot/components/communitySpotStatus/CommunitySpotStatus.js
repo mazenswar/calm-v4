@@ -37,9 +37,9 @@ export default function CommunitySpotStatus({ communitySpotStatusConfig }) {
 								reach out to the people we think would be a good fit.
 							</p>
 							<Button
-								url={formUrl}
+								href={formUrl}
 								text="Complete the Application"
-								newWindow={true}
+								external={true}
 							/>
 						</>
 					)}
