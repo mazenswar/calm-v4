@@ -1,7 +1,7 @@
 @use "../../styles/mixins" as *;
 
 .footer {
-	color: var(--brand-5);
+	color: var(--brand-6);
 	background: var(--brand-1);
 
 	p,
@@ -38,7 +38,7 @@
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
-	opacity: 0.6;
+	color: color-mix(in oklab, var(--brand-6) 92%, var(--brand-1));
 }
 
 /* Mission column */
@@ -57,18 +57,19 @@
 
 	&:hover,
 	&:focus-visible {
-		color: var(--brand-2);
+		color: var(--brand-6);
+		text-decoration-color: transparent;
 	}
 
 	&:focus-visible {
-		outline: var(--focus-ring);
+		outline: 2px solid var(--brand-6);
 		outline-offset: var(--focus-offset);
 	}
 }
 
 .footer__mission-detail {
 	margin: 0;
-	opacity: 0.8;
+	color: color-mix(in oklab, var(--brand-6) 92%, var(--brand-1));
 	line-height: 1.6;
 }
 
@@ -78,7 +79,7 @@
 	gap: var(--space-3);
 	margin-top: var(--space-6);
 	padding-top: var(--space-6);
-	border-top: 1px solid color-mix(in oklab, var(--brand-5) 18%, transparent);
+	border-top: 1px solid color-mix(in oklab, var(--brand-6) 18%, transparent);
 }
 
 .footer__inclusion-icon {
@@ -89,27 +90,26 @@
 .footer__inclusion-text {
 	margin: 0;
 	font-size: var(--font-size-sm);
-	opacity: 0.75;
+	color: color-mix(in oklab, var(--brand-6) 92%, var(--brand-1));
 	line-height: 1.5;
 }
 
 /* Links — underlined by default so they're identifiable without hovering */
 .footer__link {
-	color: var(--brand-5);
+	color: var(--brand-6);
 	text-decoration: underline;
 	text-underline-offset: 2px;
-	text-decoration-color: color-mix(in oklab, var(--brand-5) 50%, transparent);
-	opacity: 0.85;
-	transition: opacity var(--transition-fast);
+	text-decoration-color: color-mix(in oklab, var(--brand-6) 50%, transparent);
+	transition: color var(--transition-fast);
 
 	&:hover,
 	&:focus-visible {
-		opacity: 1;
+		color: var(--brand-6);
 		text-decoration-color: currentColor;
 	}
 
 	&:focus-visible {
-		outline: var(--focus-ring);
+		outline: 2px solid var(--brand-6);
 		outline-offset: var(--focus-offset);
 	}
 }
@@ -141,7 +141,7 @@
 	}
 
 	&:focus-visible {
-		outline: var(--focus-ring);
+		outline: 2px solid var(--brand-6);
 		outline-offset: var(--focus-offset);
 	}
 }
@@ -154,7 +154,7 @@
 
 /* Bottom bar */
 .footer__bottombar {
-	border-top: 1px solid color-mix(in oklab, var(--brand-5) 15%, transparent);
+	border-top: 1px solid color-mix(in oklab, var(--brand-6) 15%, transparent);
 }
 
 .footer__bottombar-inner {
@@ -175,7 +175,7 @@
 .footer__copy {
 	margin: 0;
 	font-size: var(--font-size-xs);
-	opacity: 0.75;
+	color: color-mix(in oklab, var(--brand-6) 92%, var(--brand-1));
 }
 
 .footer__legal {

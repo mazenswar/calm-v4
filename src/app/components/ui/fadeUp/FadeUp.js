@@ -16,6 +16,7 @@ export default function FadeUp({
 	threshold = 0.15,
 	className = "",
 	as: Tag = "div",
+	id,
 }) {
 	const ref = useRef(null);
 	const [prefersReduced, setPrefersReduced] = useState(getPrefersReduced);
@@ -68,6 +69,7 @@ export default function FadeUp({
 			ref={ref}
 			className={`fadeup ${visible ? "fadeup--visible" : ""} ${className}`.trim()}
 			style={style}
+			id={id}
 		>
 			{children}
 		</Tag>

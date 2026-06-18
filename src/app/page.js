@@ -114,7 +114,7 @@ const twoColumnConfig = {
 	},
 	image: {
 		src: "/images/brain-meditation.webp",
-		alt: "Illustration of a brain with a meditation figure, representing the blend of psychology and contemplative practice",
+		alt: "Illustration of a brain person in a meditation pose",
 		width: 400,
 		height: 400,
 	},
