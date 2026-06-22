@@ -1,0 +1,60 @@
+@use "../../../styles/mixins" as *;
+
+.founder-intro {
+	.founder-intro__header {
+		margin-bottom: var(--space-10);
+
+		h2 {
+			margin: 0;
+		}
+	}
+
+	.founder-intro__body {
+		&::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+
+	.founder-intro__figure {
+		margin: 0 0 var(--space-6) 0;
+		width: 100%;
+
+		@include respond(md) {
+			float: right;
+			width: 320px;
+			margin: var(--space-2) 0 var(--space-6) var(--space-10);
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+			border-radius: 50%;
+			aspect-ratio: 1;
+			object-fit: cover;
+			object-position: center top;
+		}
+	}
+
+	.founder-intro__prose {
+		p {
+			color: var(--color-text);
+			line-height: 1.8;
+			margin-bottom: var(--space-5);
+
+			&:first-child {
+				font-family: var(--font-heading);
+				font-size: var(--font-size-xl);
+				color: var(--brand-1);
+				font-weight: 700;
+				margin-bottom: var(--space-6);
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

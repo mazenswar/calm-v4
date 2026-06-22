@@ -70,6 +70,16 @@ function HeroCopy({ config }) {
 				</FadeUp>
 			)}
 
+			{config.locationTag && (
+				<FadeUp
+					as="i"
+					delay={config.eyebrow ? 200 : 100}
+					className="hero__subheading lead location__tag"
+				>
+					{config.locationTag}
+				</FadeUp>
+			)}
+
 			{config.cta && (
 				<FadeUp
 					as="div"

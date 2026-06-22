@@ -79,6 +79,9 @@
 		gap: var(--space-4);
 		align-items: center;
 		text-align: center;
+		.location__tag {
+			font-size: var(--font-size-sm);
+		}
 
 		@include respond(md) {
 			align-items: flex-start;

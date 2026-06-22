@@ -1,5 +1,4 @@
 import FadeUp from "../../ui/fadeUp/FadeUp";
-import StaggerGrid from "../../ui/staggerGrid/StaggerGrid";
 import Button from "../../ui/Button";
 import "./credentialssummary.scss";
 
@@ -25,31 +24,28 @@ export default function CredentialSummary({ credentialSummaryConfig }) {
 					{intro && <p className="credential-summary__intro">{intro}</p>}
 				</FadeUp>
 
-				<StaggerGrid
-					as="div"
-					itemAs="div"
-					className="credential-summary__grid"
-					baseDelay={100}
-					stagger={100}
-				>
-					{groups.map((group) => (
-						<div key={group.id} className="credential-summary__card">
-							<h3 className="credential-summary__card-heading">
+				<div className="credential-summary__groups">
+					{groups.map((group, i) => (
+						<FadeUp
+							key={group.id}
+							as="div"
+							className="credential-summary__group"
+							delay={100 + i * 100}
+						>
+							<h3 className="credential-summary__group-heading">
 								{group.title}
 							</h3>
-							<ul className="credential-summary__list" role="list">
-								{group.items.map((item, i) => (
-									<li key={i} className="credential-summary__item">
-										{item}
-									</li>
-								))}
-							</ul>
-						</div>
+							<p className="credential-summary__group-body">{group.body}</p>
+						</FadeUp>
 					))}
-				</StaggerGrid>
+				</div>
 
 				{footer && (
-					<FadeUp as="div" className="credential-summary__footer" delay={200}>
+					<FadeUp
+						as="div"
+						className="credential-summary__footer"
+						delay={100 + groups.length * 100}
+					>
 						{footer.text && (
 							<p className="credential-summary__footer-text">{footer.text}</p>
 						)}

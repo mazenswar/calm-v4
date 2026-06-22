@@ -16,7 +16,8 @@ const heroConfig = {
 	eyebrow: null,
 	heading: "Modern Psychology, Timeless Wisdom",
 	subheading:
-		"Virtual therapy for thoughtful adults navigating anxiety, OCD & intrusive thoughts, complex trauma, perfectionism, spiritual uncertainty, and burnout, available in 43 U.S. states and jurisdictions from our East Coast base.",
+		"Virtual therapy for adults navigating anxiety, OCD, complex trauma, and spiritual experiences while seeking a deeper understanding of themselves.",
+	locationTag: "East Coast–based. Available across 43 U.S. states.",
 	cta: {
 		text: "Schedule a Consult",
 		href: "https://zencare.co/provider/therapist/tanya-singh",
@@ -99,13 +100,14 @@ const specialtiesConfig = {
 const twoColumnConfig = {
 	heading: "Our Approach to Therapy",
 	paragraphs: [
-		"The work we aim to do is both grounded and expansive. Grounded in evidence-based psychology, rigorous training, and clear therapeutic structure. Expansive in drawing from holistic traditions, contemplative practices, and the lived wisdom clients bring with them.",
-		"Tanya's approach blends practical tools with intuitive insight. Some sessions are structured, others leave space for what emerges. Therapy is not a space for quick fixes. It is a place for presence, curiosity, and lasting change that helps you return to what feels essential and true.",
+		"The work we aim to do is both grounded and responsive. Grounded in evidence-based psychology, rigorous clinical training, and a deep respect for the complexity of being human. Responsive in how that science is applied, drawing on principles that support creativity, intuition, and attunement to who is actually in the room.",
+		"We believe that symptoms and patterns often make sense given what someone has lived, and that some ways of being are not problems to be solved but parts of who you are that the world has not made enough room for. We also believe that beneath many of our habits, defenses, and survival strategies lies a deeper wisdom about what we need, value, and long for. Therapy can help bring that wisdom into clearer focus. It begins with understanding, creating space to explore what your experiences, emotions, and patterns may be communicating.",
+		"Much of the work happens through a relationship that is real and meaningful, helping you understand patterns that may be operating outside of your awareness so you can reconnect with yourself and move through life with more ease.",
 	],
 	list: [
 		"Grounded in rigorous clinical training and evidence‑based tools",
-		"Open to holistic and contemplative practices when appropriate",
-		"Oriented toward presence and long‑term growth, not quick fixes",
+		"Applied with creativity, intuition, and sensitivity to what each person actually needs",
+		"Built on a relationship that is real and meaningful",
 	],
 	cta: {
 		text: "Learn more",
