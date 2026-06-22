@@ -115,7 +115,7 @@ const twoColumnConfig = {
 		variant: "secondary",
 	},
 	image: {
-		src: "/images/brain-meditation.webp",
+		src: "/images/home/winding-river.webp",
 		alt: "Illustration of a brain person in a meditation pose",
 		width: 400,
 		height: 400,
