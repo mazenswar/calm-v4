@@ -12,7 +12,8 @@
 	@include flex-column;
 	gap: var(--space-8);
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
+
 	&.has-image,
 	&.has-illustration {
 		@include respond(md) {
@@ -62,12 +63,16 @@
    -------------------------------------------- */
 .page-hero__media {
 	margin: 0;
+	align-self: center;
+
+	@include respond(md) {
+		align-self: auto;
+	}
 
 	img {
 		display: block;
 		width: 100%;
 		height: auto;
-		// border-radius: var(--radius-lg);
 		border-radius: 100%;
 	}
 }
